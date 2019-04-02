@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Board from './components/Board.js';
+import Status from './components/Status.js';
+import Move from './components/Move.js';
 import './App.css';
 
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
-
+			<div className="gameComp">
+				<Board />
+				<Status />
+				<Move />
 			</div>
 		);
 	}
